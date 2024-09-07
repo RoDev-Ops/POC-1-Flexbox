@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>POC Flexbox</title>
+  </head>
+  <body>
+    <h1>
+      Rodrigo Mello de Campos Silva RA: 10409316 <br />
+      Wagner Araujo Marcelino Junior RA: 10440125 <br />
+      Guilherme Gomes Ferransi RA: 10403372
+    </h1>
+    <div class="activate">
+      <h1 class="subtitle">Ativar Flexbox</h1>
+      <p style="width: 70%;">
+        Para ativar o flexbox, basta adicionar no css o comando "display: flex;"
+        Por padrão o flex directions é setado para row, mais sobre flex-direction a seguir.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="containerTop">
+        <div class="directionsRow">
+          <h1 class="subtitle">flex-direction: row;</h1>
+          <div
+            class="aux"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;
+            "
+          >
+            <div class="content">teste 1</div>
+            <div class="content">teste 2</div>
+            <div class="content">teste 3</div>
+            <div class="content">teste 4</div>
+          </div>
+        </div>
+
+        <div class="directionsRowReverse">
+          <div class="contentRowReverse">
+            <h1 class="subtitle">flex-direction: row-reverse;</h1>
+            <div
+              class="aux"
+              style="
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-evenly;
+              "
+            >
+              <div class="content">teste 1</div>
+              <div class="content">teste 2</div>
+              <div class="content">teste 3</div>
+              <div class="content">teste 4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="containerBottom">
+        <div class="directionsColumn">
+          <h1 class="subtitle">flex-direction: column;</h1>
+          <div
+            class="aux"
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+            "
+          >
+            <div class="content">teste 1</div>
+            <div class="content">teste 2</div>
+            <div class="content">teste 3</div>
+            <div class="content">teste 4</div>
+          </div>
+        </div>
+
+        <div class="directionsColumnReverse">
+            <h1 class="subtitle">flex-direction: column;</h1>
+            <div
+              class="aux"
+              style="
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: space-evenly;
+              "
+            >
+              <div class="content">teste 1</div>
+              <div class="content">teste 2</div>
+              <div class="content">teste 3</div>
+              <div class="content">teste 4</div>
+            </div>
+          </div>
+  
+
+      </div>
+    </div>
+  </body>
+</html>
