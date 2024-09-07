@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POC Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="justifyExplanation">
+        <h1 class="subtitle">
+            justify-content e align-items
+        </h1>
+        <p style="width: 70%;">
+            O comando justify-content é usado para você alinhar seus itens no eixo principal setado pelo flex-direction, enquanto o comando align-items é usado para alinhar seus itens no eixo transversal.
+        </p>
+    </div>
+
+    <div class="container" style="height: auto">
+        <h1 class="subtitle" style="color: red;">justify-content + flex-direction: row</h1>
+        <div class="containerTop" style="margin:30px;">
+            <div class="justifyRow">
+                <h1 class="subtitle">justify-content: center</h1>
+
+                <p style="margin: 5px;">
+                    Quando aplicamos essa característica no css e temos flex-direction row, centralizamos os itens no meio da linha.
+                </p>
+
+                <div class="aux" style="display: flex; flex-direction: row; justify-content: center;">
+                    <div class="content">teste123</div>
+                </div>
+            </div>
+
+            <div class="justifyRow">
+                <h1 class="subtitle">justify-content: flex-start</h1>
+
+                <p style="margin: 5px;">
+                    Quando aplicamos essa característica no css e temos flex-direction row, colocamos o objeto no começo da linha.
+                </p>
+
+                <div class="aux" style="display: flex; flex-direction: row; justify-content: flex-start; width: 100%;">
+                    <div class="content">teste123</div>
+                </div>
+            </div>
+
+            <div class="justifyRow">
+                <h1 class="subtitle">justify-content: flex-end</h1>
+
+                <p style="margin: 5px;">
+                    Quando aplicamos essa característica no css e temos flex-direction row, colocamos o objeto no final da linha.
+                </p>
+
+                <div class="aux" style="display: flex; flex-direction: row; justify-content: flex-end; width: 100%;">
+                    <div class="content">teste123</div>
+                </div>
+            </div>
+
+            <div class="justifyRow">
+                <h1 class="subtitle">justify-content: space-between</h1>
+
+                <p style="margin: 5px;">
+                    Quando aplicamos essa característica no css e temos flex-direction row, separamos os itens por espaço entre eles.
+                </p>
+
+                <div class="aux" style="display: flex; flex-direction: row; justify-content: space-between; width: 100%;">
+                    <div class="content">teste1</div>
+                    <div class="content">teste2</div>
+                    <div class="content">teste3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerBottom" style="margin: 30px;">
+            <div class="justifyRow">
+                <h1 class="subtitle">justify-content: space-around</h1>
+
+                <p style="margin: 5px;">
+                    Quando aplicamos essa característica no css e temos flex-direction row, separamos os itens por espaço entre e após eles.
+                </p>
+
+                <div class="aux" style="display: flex; flex-direction: row; justify-content: space-around; width: 100%;">
+                    <div class="content">teste1</div>
+                    <div class="content">teste2</div>
+                    <div class="content">teste3</div>
+                </div>
+            </div>
+
+            <div class="justifyRow">
+                <h1 class="subtitle">justify-content: space-evenly</h1>
+
+                <p style="margin: 5px;">
+                    Quando aplicamos essa característica no css e temos flex-direction row, separamos os itens por espaços de tamanhos iguais entre eles.
+                </p>
+
+                <div class="aux" style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%;">
+                    <div class="content">teste1</div>
+                    <div class="content">teste2</div>
+                    <div class="content">teste3</div>
+                </div>
+            </div>
+
+            <div class="justifyRow">
+                <h1 class="subtitle">justify-content: initial</h1>
+
+                <p style="margin: 5px;">
+                    Quando aplicamos essa característica no css e temos flex-direction row, setamos o justify-content para que foi colocado pela primeira vez na cascata.
+                </p>
+
+                <div class="aux" style="display: flex; flex-direction: row; justify-content: initial; width: 100%;">
+                    <div class="content">teste1</div>
+                    <div class="content">teste2</div>
+                    <div class="content">teste3</div>
+                </div>
+            </div>
+
+            <div class="justifyRow">
+                <h1 class="subtitle">justify-content: inherit</h1>
+
+                <p style="margin: 5px;">
+                    Quando aplicamos essa característica no css e temos flex-direction row, setamos o justify-content para o mesmo do objeto pai.
+                </p>
+
+                <div class="aux" style="display: flex; flex-direction: row; justify-content: inherit; width: 100%;">
+                    <div class="content">teste1</div>
+                    <div class="content">teste2</div>
+                    <div class="content">teste3</div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>
