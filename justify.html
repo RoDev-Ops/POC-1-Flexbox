@@ -11,22 +11,22 @@
       <h1 class="subtitle">justify-content e align-items</h1>
       <p style="width: 70%">
         O comando justify-content é usado para você alinhar seus itens no eixo
-        principal setado pelo flex-direction, enquanto o comando align-items é
-        usado para alinhar seus itens no eixo transversal.
+        principal (por padrão horizontal), enquanto o comando align-items é
+        usado para alinhar seus itens no eixo transversal (por padrão vertical).
+        <br />
+        Nos exemplos abaixo estaremos usando os eixos padrão.
       </p>
     </div>
 
-    <div class="container" style="height: auto">
-      <h1 class="subtitle" style="color: red">
-        justify-content + flex-direction: row
-      </h1>
+    <div class="container" style="height: auto; overflow: scroll;" id="justify">
+      <h1 class="subtitle" style="color: red">justify-content</h1>
       <div class="containerTop" style="margin: 30px">
         <div class="justifyRow">
           <h1 class="subtitle">justify-content: center</h1>
 
           <p style="margin: 5px">
-            Quando aplicamos essa característica no CSS e temos flex-direction
-            row, centralizamos os itens no meio da linha.
+            Quando aplicamos essa característica no CSS, centralizamos os itens
+            no meio da linha se o flex-direction for row/row-reverse ou centraliza verticalmente se o flex-direction for column/column-reverse.
           </p>
 
           <div
@@ -41,8 +41,8 @@
           <h1 class="subtitle">justify-content: flex-start</h1>
 
           <p style="margin: 5px">
-            Quando aplicamos essa característica no CSS e temos flex-direction
-            row, colocamos o objeto no começo da linha.
+            Quando aplicamos essa característica no CSS, ele coloca o objeto no
+            começo da linha se for flex-direction row/row-reverse ou coloca o objeto no topo do container para flex-direction column/column-reverse.
           </p>
 
           <div
@@ -62,8 +62,8 @@
           <h1 class="subtitle">justify-content: flex-end</h1>
 
           <p style="margin: 5px">
-            Quando aplicamos essa característica no CSS e temos flex-direction
-            row, colocamos o objeto no final da linha.
+            Quando aplicamos essa característica no CSS, colocamos o objeto no
+            final da linha para flex-direction row/row-reverse ou coloca o objeto na parte inferior da página se for flex-direction column/column-reverse.
           </p>
 
           <div
@@ -83,8 +83,8 @@
           <h1 class="subtitle">justify-content: space-between</h1>
 
           <p style="margin: 5px">
-            Quando aplicamos essa característica no CSS e temos flex-direction
-            row, separamos os itens por espaço entre eles.
+            Quando aplicamos essa característica no CSS, separamos os itens por
+            espaço entre eles.
           </p>
 
           <div
@@ -108,8 +108,8 @@
           <h1 class="subtitle">justify-content: space-around</h1>
 
           <p style="margin: 5px">
-            Quando aplicamos essa característica no CSS e temos flex-direction
-            row, separamos os itens por espaço entre e após eles.
+            Quando aplicamos essa característica no CSS, separamos os itens por
+            espaço entre e após eles.
           </p>
 
           <div
@@ -131,8 +131,8 @@
           <h1 class="subtitle">justify-content: space-evenly</h1>
 
           <p style="margin: 5px">
-            Quando aplicamos essa característica no CSS e temos flex-direction
-            row, separamos os itens por espaços de tamanhos iguais entre eles.
+            Quando aplicamos essa característica no CSS, separamos os itens por
+            espaços de tamanhos iguais entre eles.
           </p>
 
           <div
@@ -154,9 +154,8 @@
           <h1 class="subtitle">justify-content: initial</h1>
 
           <p style="margin: 5px">
-            Quando aplicamos essa característica no CSS e temos flex-direction
-            row, setamos o justify-content para que foi colocado pela primeira
-            vez na cascata.
+            Quando aplicamos essa característica no CSS, setamos o
+            justify-content para que foi colocado pela primeira vez na cascata.
           </p>
 
           <div
@@ -178,8 +177,188 @@
           <h1 class="subtitle">justify-content: inherit</h1>
 
           <p style="margin: 5px">
-            Quando aplicamos essa característica no CSS e temos flex-direction
-            row, setamos o justify-content para o mesmo do objeto pai.
+            Quando aplicamos essa característica no CSS, setamos o
+            justify-content para o mesmo do objeto pai.
+          </p>
+
+          <div
+            class="aux"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: inherit;
+              width: 100%;
+            "
+          >
+            <div class="content">teste1</div>
+            <div class="content">teste2</div>
+            <div class="content">teste3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container"
+      style="height: 1000px; border-color: green; overflow: scroll"
+      id="alignItems"
+    >
+      <h1 class="subtitle" style="color: red">align-items</h1>
+      <div class="containerTop" style="margin: 30px">
+        <div class="justifyRow">
+          <h1 class="subtitle">align-items: normal</h1>
+
+          <p style="margin: 5px">
+            Quando aplicamos essa característica no CSS, fazemos ele se
+            comportar igual stretch do flexbox, esticando os itens para
+            preencher o container.
+          </p>
+
+          <div
+            class="aux"
+            style="display: flex; flex-direction: row; height: 100%; align-items: normal;"
+          >
+            <div class="content">teste123</div>
+          </div>
+        </div>
+
+        <div class="justifyRow">
+          <h1 class="subtitle">align-items: stretch</h1>
+
+          <p style="margin: 5px">
+            Quando aplicamos essa característica no CSS, esticamos o objeto para preencher o container.
+          </p>
+
+          <div
+            class="aux"
+            style="
+              display: flex;
+              flex-direction: row;
+              height: 100%; align-items: stretch;
+            "
+          >
+            <div class="content">teste123</div>
+          </div>
+        </div>
+
+        <div class="justifyRow">
+          <h1 class="subtitle">align-items: center</h1>
+
+          <p style="margin: 5px">
+            Quando aplicamos essa característica no CSS, centraliza verticalmente o objeto se o flex-direction for row/row-reverse, caso seja column/column-reverse, ele centraliza na linha
+          </p>
+
+          <div
+            class="aux"
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              height: 100%;
+            "
+          >
+            <div class="content">teste123</div>
+          </div>
+        </div>
+
+        <div class="justifyRow">
+          <h1 class="subtitle">align-items: flex-start</h1>
+
+          <p style="margin: 5px">
+            Quando aplicamos essa característica no CSS, ele coloca os itens no topo do container se o flex-direction for row/row-reverse e se for column/column-reverse ele coloca no começo da linha.
+          </p>
+
+          <div
+            class="aux"
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              height: 100%;
+            "
+          >
+            <div class="content">teste1</div>
+            <div class="content">teste2</div>
+            <div class="content">teste3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="containerBottom" style="margin: 30px">
+        <div class="justifyRow">
+          <h1 class="subtitle">align-items: flex-end</h1>
+
+          <p style="margin: 5px">
+            Quando aplicamos essa característica no CSS, ele coloca os itens na parte inferior do container se o flex-direction for row/row-reverse e se for column/column-reverse ele coloca no final da linha.
+          </p>
+
+          <div
+            class="aux"
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: flex-end;
+              height: 100%;
+            "
+          >
+            <div class="content">teste1</div>
+            <div class="content">teste2</div>
+            <div class="content">teste3</div>
+          </div>
+        </div>
+
+        <div class="justifyRow">
+          <h1 class="subtitle">justify-content: space-evenly</h1>
+
+          <p style="margin: 5px">
+            Quando aplicamos essa característica no CSS, separamos os itens por
+            espaços de tamanhos iguais entre eles.
+          </p>
+
+          <div
+            class="aux"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;
+              width: 100%;
+            "
+          >
+            <div class="content">teste1</div>
+            <div class="content">teste2</div>
+            <div class="content">teste3</div>
+          </div>
+        </div>
+
+        <div class="justifyRow">
+          <h1 class="subtitle">justify-content: initial</h1>
+
+          <p style="margin: 5px">
+            Quando aplicamos essa característica no CSS, setamos o
+            justify-content para que foi colocado pela primeira vez na cascata.
+          </p>
+
+          <div
+            class="aux"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: initial;
+              width: 100%;
+            "
+          >
+            <div class="content">teste1</div>
+            <div class="content">teste2</div>
+            <div class="content">teste3</div>
+          </div>
+        </div>
+
+        <div class="justifyRow">
+          <h1 class="subtitle">justify-content: inherit</h1>
+
+          <p style="margin: 5px">
+            Quando aplicamos essa característica no CSS, setamos o
+            justify-content para o mesmo do objeto pai.
           </p>
 
           <div
