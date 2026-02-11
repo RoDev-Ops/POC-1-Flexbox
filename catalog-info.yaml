@@ -7,6 +7,6 @@ metadata:
     github.com/project-slug: "RoDev-Ops/POC-1-Flexbox"
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: documentation
+  type: service
   lifecycle: experimental
   owner: guests
