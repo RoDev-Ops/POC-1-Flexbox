@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: POC-Flexbox
+  description: Um projeto simples da faculdade para ensinar Flexbox
+  annotations:
+    github.com/project-slug: "RoDev-Ops/POC-1-Flexbox"
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: documentation
+  lifecycle: experimental
+  owner: guests
